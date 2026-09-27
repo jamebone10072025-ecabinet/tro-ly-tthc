@@ -141,23 +141,69 @@
 <body>
 
     <!-- Header -->
-    <div class="header">
-        <h1>
-            <span class="robot-icon">🤖</span>
-            Trợ lý ảo tra cứu Thủ tục hành chính
-        </h1>
-        <p>Sở Khoa học và Công nghệ tỉnh Gia Lai</p>
+    <!-- Header với Banner Chuyển đổi số -->
+<div class="header" style="
+    background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+    color: white;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+">
+    <!-- Banner Image -->
+    <div style="
+        width: 100%;
+        height: 350px;
+        background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=350&fit=crop') center center;
+        background-size: cover;
+        position: relative;
+    ">
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 86, 179, 0.75);
+        "></div>
+        <div style="
+            position: relative;
+            z-index: 2;
+            padding: 80px 20px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        ">
+            <h1 style="
+                font-size: 42px;
+                margin: 0 0 15px 0;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+                font-weight: bold;
+            ">
+                🤖 Trợ lý ảo Thủ tục Hành chính
+            </h1>
+            <p style="
+                font-size: 22px;
+                margin: 0 0 10px 0;
+                opacity: 0.95;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            ">
+                Sở Khoa học và Công nghệ tỉnh Gia Lai
+            </p>
+            <p style="
+                font-size: 16px;
+                margin: 15px 0 0 0;
+                opacity: 0.9;
+                max-width: 800px;
+            ">
+                💡 <strong>Chuyển đổi số</strong> - Đồng hành cùng doanh nghiệp và người dân
+            </p>
+        </div>
     </div>
-
-    <!-- Welcome Section -->
-    <div class="welcome-section">
-        <h2>Chào mừng Quý tổ chức/cá nhân!</h2>
-        <p>
-            Trợ lý ảo được phát triển để hỗ trợ tra cứu thông tin về thủ tục hành chính 
-            thuộc phạm vi quản lý của Sở Khoa học và Công nghệ tỉnh Gia Lai. 
-            Hãy click vào nút chat ở góc phải màn hình để bắt đầu trò chuyện.
-        </p>
-    </div>
+</div>
 
     <!-- Cards Section -->
     <div class="cards-container">
