@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trợ lý ảo TTHC - Sở KH&CN Gia Lai</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .header h1 .robot-icon {
+            font-size: 40px;
+        }
+
+        .header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        /* Welcome Section */
+        .welcome-section {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: white;
+            margin: 30px auto;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+
+        .welcome-section h2 {
+            color: #0056b3;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            color: #666;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Cards Section */
+        .cards-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #0056b3;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #0056b3;
+            font-size: 24px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .card-icon {
+            font-size: 28px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .welcome-section h2 {
+                font-size: 28px;
+            }
+
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>
+            <span class="robot-icon">🤖</span>
+            Trợ lý ảo Thủ tục Hành chính
+        </h1>
+        <p>Sở Khoa học và Công nghệ tỉnh Gia Lai</p>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+        <h2>Chào mừng Quý tổ chức/cá nhân!</h2>
+        <p>
+            Trợ lý ảo được phát triển để hỗ trợ tra cứu thông tin về thủ tục hành chính 
+            thuộc phạm vi quản lý của Sở Khoa học và Công nghệ tỉnh Gia Lai. 
+            Hãy click vào nút chat ở góc phải màn hình để bắt đầu trò chuyện.
+        </p>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="cards-container">
+        <div class="card">
+            <h3>
+                <span class="card-icon">📏</span>
+                Tiêu chuẩn Đo lường Chất lượng
+            </h3>
+            <p>Cấp mã số mã vạch, kiểm tra hàng hóa nhập khẩu, chỉ định tổ chức đánh giá sự phù hợp...</p>
+        </div>
+
+        <div class="card">
+            <h3>
+                <span class="card-icon">🔬</span>
+                Hoạt động KH&CN
+            </h3>
+            <p>Cấp giấy chứng nhận đánh giá công nghệ, giám định công nghệ, đăng ký hoạt động KH&CN...</p>
+        </div>
+
+        <div class="card">
+            <h3>
+                <span class="card-icon">☢️</span>
+                An toàn bức xạ & Hạt nhân
+            </h3>
+            <p>Cấp phép sử dụng thiết bị X-quang, chứng chỉ nhân viên bức xạ, phí thẩm định...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2026 Sở Khoa học và Công nghệ tỉnh Gia Lai | skhcn.gialai.gov.vn</p>
+    </div>
+
+    <!-- TODO: Thêm chatbot embed code ở đây -->
+
+</body>
+</html>
